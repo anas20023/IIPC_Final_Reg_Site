@@ -8,7 +8,7 @@ require("dotenv").config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const Mong_db_string=process.env.MONGO_URL;
+const Mong_db_string = process.env.MONGO_URL;
 
 app.use(bodyparser.json());
 app.use(express.static("public"));
@@ -18,7 +18,7 @@ app.use(
   })
 );
 //
-// 
+//
 
 mongoose.connect(Mong_db_string, {
   useNewUrlParser: true,
