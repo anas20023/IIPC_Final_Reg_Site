@@ -17,6 +17,7 @@ const cash_payment = document.querySelector("#ref_div_show");
 const online_payment = document.querySelector("#tr_id_div_show");
 const bkash = document.querySelector("#bksh_nm_div_show");
 const nagad = document.querySelector("#Nagad_nmbr_div_show");
+
 //------------------------------------------------------------
 
 ///----------------Payment Method Change------------
@@ -140,3 +141,4 @@ function Value_Assign() {
   Transaction_id = document.getElementById("tr_id").value;
   reference = document.getElementById("ref_name").value;
 }
+
