@@ -18,11 +18,37 @@
     <title>IIPC-52 || Intra-Intake Programming Contest</title>
   </head>
   <body>
-    <p class="text-center text-lg font-bold  mt-10">
-      <span id="congo" class="text-green-600 text-2xl">Congratulations !!!</span>  <br />
+    <!-- Navigation Bar Section -->
+    <section
+      class="flex flex-row justify-center items-center h-20 w-4/5 max-w-7xl mx-auto">
+      <nav class="h-full w-full flex flex-row justify-between items-center">
+        <h2
+          class="text-xl lg:text-2xl text-slate-800 font-bold cursor-pointer"
+          onclick="location.href='#'">
+          Remain <span class="text-[30px] text-blue-600">52</span>
+        </h2>
+        <div class="flex flex-row gap-4 justify-between items-center">
+          <h1 class="text-slate-900 font-medium">Follow us on</h1>
+          <a
+            href="https://www.facebook.com/remain52"
+            target="_blank"
+            rel="noopener">
+            <i
+              class="fa-brands fa-facebook text-blue-500 text-2xl mx-1 cursor-pointer"></i>
+          </a>
+        </div>
+      </nav>
+    </section>
+    <!-- Navigation Bar Section -->
+    <p class="text-center text-lg font-bold mt-10">
+      <span id="congo" class="text-green-600 text-2xl"
+        >Congratulations !!!</span
+      >
+      <br />
       You are successfully registered for the contest. <br />
       Please wait for the confirmation email.
     </p>
+
     <div class="flex flex-col gap-2 justify-center items-center mt-10">
       <button
         type="button"
@@ -30,34 +56,72 @@
         class="bg-green-600 text-sm text-white font-medium px-4 py-2 lg:px-5 lg:py-2 rounded-md hover:bg-white hover:text-green-600 hover:border-2 border-green-600 transform duration-300">
         Go to Home
       </button>
-      <h1 class="text-lg font-medium text-center mt-5">Contact Us:</h1>
-      <div class="flex flex-wrap flex-row justify-evenly items-center">
-        <a href="tel:+8801981824807" target="_blank">
-          <i
-            class="fa-solid fa-phone text-slate-800 text-[20px] mx-2 cursor-pointer"
-            ><span class="text-xs">1</span></i
-          >
-        </a>
-        <a href="tel:+8801740140581" target="_blank">
-          <i
-            class="fa-solid fa-phone text-slate-800 text-[20px] mx-2 cursor-pointer"
-            ><span class="text-xs">2</span></i
-          >
-        </a>
-        <a href="https://wa.me/+88001885600943" target="_blank" rel="noopener">
-          <i
-            class="fa-brands fa-whatsapp text-slate-800 text-2xl mx-2 cursor-pointer"></i>
-        </a>
-        <a href="mailto:remainn.52@gmail.com">
-          <i
-            class="fa-solid fa-envelope text-slate-800 text-2xl mx-2 cursor-pointer"></i>
-        </a>
-        <a href="https://www.facebook.com/remain52" target="_blank" rel="noopener">
-          <i
-            class="fa-brands fa-facebook text-slate-800 text-2xl mx-2 cursor-pointer"></i>
-        </a>
+
+      <!-- PopUp Contact Section -->
+      <div
+        class="absolute top-[20%] right-1 flex flex-col h-auto w-10 justify-center items-center gap-1">
+        <div
+          class="flex flex-col bg-green-500 rounded justify-center items-center py-3 pl-1">
+          <a href="tel:+8801981824807" target="_blank">
+            <i
+              class="fa-solid fa-phone text-white text-[20px] mx-2 cursor-pointer"
+              ><span class="text-xs">1</span></i
+            >
+          </a>
+        </div>
+        <div
+          class="flex flex-col bg-green-600 rounded justify-center items-center py-3 pl-1">
+          <a href="tel:+8801740140581" target="_blank">
+            <i
+              class="fa-solid fa-phone text-white text-[20px] mx-2 cursor-pointer"
+              ><span class="text-xs">2</span></i
+            >
+          </a>
+        </div>
+        <div
+          class="flex flex-col bg-green-600 rounded justify-center items-center py-3 pl-1">
+          <a href="https://wa.me/+8801885600943" target="_blank" rel="noopener">
+            <i
+              class="fa-brands fa-whatsapp text-white text-[22px] mx-3 cursor-pointer"></i>
+          </a>
+        </div>
+        <div
+          class="flex flex-col bg-[#d90429] rounded justify-center items-center py-3 pl-1">
+          <a href="mailto:remainn.52@gmail.com" target="_blank" rel="noopener">
+            <i
+              class="fa-solid fa-envelope text-white text-[20px] mx-3 cursor-pointer"></i>
+          </a>
+        </div>
       </div>
+      <!-- PopUp Contact Section -->
     </div>
+    
+    <footer
+      class="flex flex-col lg:flex-row justify-between items-center fixed bottom-0 w-full lg:px-36 bg-slate-800 py-8 gap-4 lg:gap-0">
+      <p
+        class="text-center lg:text-left lg:text-sm text-white font-medium mb-3">
+        Organized By
+        <span class="text-2xl text-white font-bold"
+          >Remain <span class="text-[30px] text-blue-600 impo">52</span></span
+        >
+        <br />
+        All Students of Intake 52 <br />
+        <span
+          class="cursor-pointer hidden lg:inline-block text-[10px] font-light"
+          onclick="window.location.href='https://github.com/anas20023'"
+          >Developed By Anas Ibn Belal</span
+        >
+      </p>
+      <p class="text-center lg:text-right lg:text-base text-white font-medium">
+        Department of CSE <br />
+        Bangladesh University of Business & Technology <br />
+        <span
+          class="cursor-pointer inline-block lg:hidden text-[10px] font-light"
+          onclick="window.location.href='https://github.com/anas20023'"
+          >Developed By Anas Ibn Belal</span
+        >
+      </p>
+    </footer>
     <script src="./app.js"></script>
   </body>
 </html>

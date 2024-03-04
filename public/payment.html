@@ -22,40 +22,63 @@
     <section
       class="flex flex-row justify-center items-center h-20 w-4/5 max-w-7xl mx-auto">
       <nav class="h-full w-full flex flex-row justify-between items-center">
-        <h2 class="text-xl lg:text-2xl text-slate-800 font-bold cursor-pointer" onclick="location.href='./index.html'">
+        <h2
+          class="text-xl lg:text-2xl text-slate-800 font-bold cursor-pointer"
+          onclick="location.href='./index.html'">
           Remain <span class="text-[30px] text-blue-600">52</span>
         </h2>
-        <div class="flex flex-wrap flex-row justify-evenly items-center">
-          <a href="tel:+8801981824807" target="_blank">
+        <div class="flex flex-row gap-4 justify-between items-center">
+          <h1 class="text-slate-900 font-medium">Follow us on</h1>
+          <a
+            href="https://www.facebook.com/remain52"
+            target="_blank"
+            rel="noopener">
             <i
-              class="fa-solid fa-phone text-slate-800 text-[20px] mx-2 cursor-pointer"
-              ><span class="text-xs">1</span></i
-            >
-          </a>
-          <a href="tel:+8801740140581" target="_blank">
-            <i
-              class="fa-solid fa-phone text-slate-800 text-[20px] mx-2 cursor-pointer"
-              ><span class="text-xs">2</span></i
-            >
-          </a>
-          <a href="https://wa.me/8801885600943" target="_blank" rel="noopener">
-            <i
-              class="fa-brands fa-whatsapp text-slate-800 text-2xl mx-2 cursor-pointer"></i>
-          </a>
-          <a href="mailto:remainn.52@gmail.com">
-            <i
-              class="fa-solid fa-envelope text-slate-800 text-2xl mx-2 cursor-pointer"></i>
-          </a>
-          <a href="https://www.facebook.com/remain52" target="_blank" rel="noopener" class="hidden lg:block">
-            <i
-              class="fa-brands fa-facebook text-slate-800 text-2xl mx-2 cursor-pointer"></i>
+              class="fa-brands fa-facebook text-blue-500 text-2xl mx-1 cursor-pointer"></i>
           </a>
         </div>
       </nav>
     </section>
     <!-- Navigation Bar Section -->
+    <!-- PopUp Contact Section -->
+    <div
+      class="fixed top-[20%] right-1 flex flex-col h-auto w-10 justify-center items-center gap-1">
+      <div
+        class="flex flex-col bg-green-500 rounded justify-center items-center py-3 pl-1">
+        <a href="tel:+8801981824807" target="_blank">
+          <i
+            class="fa-solid fa-phone text-white text-[20px] mx-2 cursor-pointer"
+            ><span class="text-xs">1</span></i
+          >
+        </a>
+      </div>
+      <div
+        class="flex flex-col bg-green-600 rounded justify-center items-center py-3 pl-1">
+        <a href="tel:+8801740140581" target="_blank">
+          <i
+            class="fa-solid fa-phone text-white text-[20px] mx-2 cursor-pointer"
+            ><span class="text-xs">2</span></i
+          >
+        </a>
+      </div>
+      <div
+        class="flex flex-col bg-green-600 rounded justify-center items-center py-3 pl-1">
+        <a href="https://wa.me/+8801885600943" target="_blank" rel="noopener">
+          <i
+            class="fa-brands fa-whatsapp text-white text-[22px] mx-3 cursor-pointer"></i>
+        </a>
+      </div>
+      <div
+        class="flex flex-col bg-[#d90429] rounded justify-center items-center py-3 pl-1">
+        <a href="mailto:remainn.52@gmail.com" target="_blank" rel="noopener">
+          <i
+            class="fa-solid fa-envelope text-white text-[20px] mx-3 cursor-pointer"></i>
+        </a>
+      </div>
+    </div>
+    <!-- PopUp Contact Section -->
     <!-- Form Section -->
-    <section class="h-auto  w-4/5 max-w-7xl mx-auto mt-10">
+    <section class="h-auto w-4/5 max-w-7xl mx-auto mt-10">
       <h1
         class="text-center text-2xl lg:text-4xl text-slate-800 font-semibold my-4">
         Intra-Intake Programming Contest
@@ -267,7 +290,7 @@
     <!-- Form Section -->
 
     <footer
-      class="flex flex-col lg:flex-row justify-between items-center w-full lg:px-36 bg-slate-800 py-8 gap-4 lg:gap-0">
+      class="flex flex-col lg:flex-row justify-between items-center w-full lg:px-36 bg-slate-800 py-8 lg:py-7 gap-4 lg:gap-0">
       <p
         class="text-center lg:text-left lg:text-sm text-white font-medium mb-3">
         Organized By
@@ -276,10 +299,16 @@
         >
         <br />
         All Students of Intake 52 <br />
+        <span class="hidden lg:inline text-[11px] font-medium">
+          Developed By Anas Ibn Belal</span
+        >
       </p>
       <p class="text-center lg:text-right lg:text-base text-white font-medium">
         Department of CSE <br />
-        Bangladesh University of Business & Technology
+        Bangladesh University of Business & Technology <br />
+        <span class="inline lg:hidden text-[11px] font-medium">
+          Developed By Anas Ibn Belal</span
+        >
       </p>
     </footer>
     <script src="./app.js"></script>
