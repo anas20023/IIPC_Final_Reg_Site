@@ -22,7 +22,7 @@
     <section
       class="flex flex-row justify-center items-center h-20 w-4/5 max-w-7xl mx-auto">
       <nav class="h-full w-full flex flex-row justify-between items-center">
-        <h2 class="text-2xl text-slate-800 font-bold">
+        <h2 class="text-xl lg:text-2xl text-slate-800 font-bold cursor-pointer" onclick="location.href='./index.html'">
           Remain <span class="text-[30px] text-blue-600">52</span>
         </h2>
         <div class="flex flex-wrap flex-row justify-evenly items-center">
@@ -180,8 +180,8 @@
               title="Select Payment Method">
               <option value="" hidden>Select Payment Method</option>
               <option value="Cash">Cash</option>
-              <option value="Bkash">Bkash</option>
-              <option value="Nagad">Nagad</option>
+              <option value="Bkash">Bkash (Send Money at 01323148634)</option>
+              <option value="Nagad">Nagad (Send Money at 01323148634)</option>
             </select>
           </div>
         </div>
@@ -199,7 +199,7 @@
               id="reference"
               type="text"
               name="reference"
-              placeholder="Reference" />
+              placeholder="CR Reference" />
           </div>
         </div>
         <!-- Reference -->
@@ -209,7 +209,7 @@
             <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="bksh_nmr"
-              >Bkash Number (Send Money : 017XXXXXXX)
+              >Your Bkash Number
             </label>
             <input
               class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
@@ -226,7 +226,7 @@
             <label
               class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
               for="Nagad_number"
-              >Nagad Number (Send Money : 017XXXXXXX)
+              >Your Nagad Number
             </label>
             <input
               class="appearance-none block w-full bg-gray-100 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"

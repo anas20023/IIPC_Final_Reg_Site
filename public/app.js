@@ -101,7 +101,8 @@ function Clean_Default() {
   online_payment.classList.add("hidden");
 }
 function Cash_More() {
-  document.getElementById("ref_name").setAttribute("required", "");
+  document.getElementById("reference").setAttribute("required", "");
+  //document.getElementById("ref_name").setAttribute("required", "");
   document.getElementById("bksh_nmr").removeAttribute("required", "");
   document.getElementById("tr_id").removeAttribute("required", "");
   document.getElementById("Nagad_number").removeAttribute("required", "");
@@ -111,21 +112,24 @@ function Cash_More() {
   document.getElementById("tr_id").value = "";
 }
 function Bkash_More() {
-  document.getElementById("Nagad_number").removeAttribute("required", "");
-  document.getElementById("tr_id").removeAttribute("required", "");
-  document.getElementById("ref_name").removeAttribute("required", "");
   document.getElementById("bksh_nmr").setAttribute("required", "");
+  document.getElementById("Nagad_number").removeAttribute("required", "");
+  // document.getElementById("tr_id").removeAttribute("required", "");
+  document.getElementById("reference").removeAttribute("required", "");
+  //document.getElementById("ref_name").removeAttribute("required", "");
   document.getElementById("tr_id").setAttribute("required", "");
-  document.getElementById("ref_name").value = "";
+  document.getElementById("reference").value = "";
+  document.getElementById("tr_id").value = "";
 }
 function Nagad_More() {
   document.getElementById("bksh_nmr").removeAttribute("required", "");
   document.getElementById("tr_id").removeAttribute("required", "");
-  document.getElementById("ref_name").removeAttribute("required", "");
+  document.getElementById("reference").removeAttribute("required", "");
   document.getElementById("Nagad_number").setAttribute("required", "");
   document.getElementById("tr_id").setAttribute("required", "");
-  document.getElementById("ref_name").value = "";
+  document.getElementById("reference").value = "";
   document.getElementById("bksh_nmr").value = "";
+  document.getElementById("tr_id").value = "";
 }
 //-----------------------
 // Value Assign
@@ -141,4 +145,3 @@ function Value_Assign() {
   Transaction_id = document.getElementById("tr_id").value;
   reference = document.getElementById("ref_name").value;
 }
-
