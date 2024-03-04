@@ -1,4 +1,4 @@
 # IIPC Intra-Intake Programing Contest 
 ### Organized By Intake 52 
-## DPT od CSE 
+## Department of CSE 
 # Bangladesh University of Business and Technology
