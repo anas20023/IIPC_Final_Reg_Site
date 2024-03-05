@@ -58,6 +58,7 @@ app.post("/signup", (req, res) => {
     NagadNumber: NagadNumber,
     TransactionID: TransactionID,
     Reference: Reference,
+    Status: "Pending",
   };
   db.collection("users").findOne(
     { StudentID: Student_ID },
@@ -81,6 +82,17 @@ app.post("/signup", (req, res) => {
   );
 });
 
+//----------
+app.post("/check", (req, res) => {
+  let check_id = req.body.student_id;
+  db.collection("users").findOne({ StudentID: check_id }, (err, result) => {
+    if (result == null) {
+      
+    } else {
+      return res.redirect("user_exist.html");
+    }
+  });
+});
 //----------
 
 app
