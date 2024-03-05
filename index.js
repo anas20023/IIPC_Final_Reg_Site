@@ -87,9 +87,9 @@ app.post("/check", (req, res) => {
   let check_id = req.body.student_id;
   db.collection("users").findOne({ StudentID: check_id }, (err, result) => {
     if (result == null) {
-      
+      res.send("Not Registered!");
     } else {
-      return res.redirect("user_exist.html");
+      res.send("Registered!");
     }
   });
 });
