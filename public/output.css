@@ -684,8 +684,16 @@ video {
   width: 80%;
 }
 
+.w-8 {
+  width: 2rem;
+}
+
 .w-full {
   width: 100%;
+}
+
+.w-7 {
+  width: 1.75rem;
 }
 
 .max-w-7xl {
@@ -1090,6 +1098,10 @@ video {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-10 {
+    width: 2.5rem;
   }
 
   .lg\:flex-row {
