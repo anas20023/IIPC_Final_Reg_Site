@@ -85,14 +85,24 @@ app.post("/signup", (req, res) => {
 //----------
 app.post("/check", (req, res) => {
   let check_id = req.body.student_id;
-  db.collection("users").findOne({ StudentID: check_id }, (err, result) => {
-    if (result == null) {
-      res.send("Not Registered!");
-    } else {
-      res.send("Registered!");
+  db.collection("users").findOne(
+    { StudentID: check_id },
+    function (err, result) {
+      if (!result) {
+        return res.redirect("/norg");
+      }
+
+      if (result.Status === "Pending") {
+        return res.redirect("/pending");
+      }
+
+      if (result.Status === "Accept") {
+        return res.redirect("/done");
+      }
     }
-  });
+  );
 });
+
 //----------
 
 app
@@ -104,3 +114,15 @@ app
   })
   .listen(PORT);
 console.log(`Listening on Port ${PORT}`);
+
+//---------Get Handerler-----------
+app.get("/norg", (req, res) => {
+  return res.redirect("not_Reg.html");
+});
+
+app.get("/pending", (req, res) => {
+  return res.redirect("pending.html");
+});
+app.get("/done", (req, res) => {
+  return res.redirect("done.html");
+});

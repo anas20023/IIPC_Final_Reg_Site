@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IIPC-52 || Intra-Intake Programming Contest</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -16,31 +15,48 @@
       type="image/x-icon" />
     <link rel="stylesheet" href="./output.css" />
     <link rel="stylesheet" href="style.css" />
+    <title>IIPC-52 || Intra-Intake Programming Contest</title>
   </head>
-  <body class="font-[poppins]">
+  <body>
     <!-- Navigation Bar Section -->
     <section
       class="flex flex-row justify-center items-center h-20 w-4/5 max-w-7xl mx-auto">
       <nav class="h-full w-full flex flex-row justify-between items-center">
         <h2
           class="text-xl lg:text-2xl text-slate-800 font-bold cursor-pointer"
-          onclick="location.href='#'">
+          onclick="location.href='./index.html'">
           INTAKE <span class="text-[30px] text-blue-600">52</span>
         </h2>
-        <div
-          onclick="location.href='./check.html'"
-          class="flex flex-row gap-1 justify-between items-center cursor-pointer">
-          <h1 class="hidden lg:block text-slate-900 font-medium">
-            Check Status
-          </h1>
-          <i class="fa-solid fa-circle-check text-green-500 text-2xl mx-1"></i>
+        <div class="flex flex-row gap-1 justify-between items-center">
+          <h1 class="text-slate-900 font-medium">Follow us on</h1>
+          <a
+            href="https://www.facebook.com/remain52"
+            target="_blank"
+            rel="noopener">
+            <i
+              class="fa-brands fa-facebook text-blue-500 text-2xl mx-1 cursor-pointer"></i>
+          </a>
         </div>
       </nav>
     </section>
     <!-- Navigation Bar Section -->
+    <!-- Status Check -->
+    <div
+      class="flex flex-col gap-4 justify-center items-center mt-10 bg-red-600 w-2/3 mx-auto rounded-md p-4 shadow-lg">
+      <h2 class="text-xl font-bold text-center text-white">
+        You Didn't Register Yet !!
+      </h2>
+    </div>
+    <button
+      type="button"
+      onclick="location.href='./index.html'"
+      class="mx-auto block mt-5 bg-green-600 text-sm text-white font-medium px-4 py-2 lg:px-5 lg:py-2 rounded hover:bg-white hover:text-green-600 hover:border-2 border-green-600 transform duration-300">
+      Register Now
+    </button>
+    <!-- Status Check -->
     <!-- PopUp Contact Section -->
     <div
-      class="absolute top-[20%] right-1 flex flex-col h-auto w-10 justify-center items-center gap-1">
+      class="absolute top-[30%] right-1 flex flex-col h-auto w-10 justify-center items-center gap-1">
       <div
         class="flex flex-col bg-green-500 rounded justify-center items-center py-3 pl-1">
         <a href="tel:+8801981824807" target="_blank">
@@ -63,7 +79,7 @@
         class="flex flex-col bg-green-600 rounded justify-center items-center py-3 pl-1">
         <a href="https://wa.me/+8801885600943" target="_blank" rel="noopener">
           <i
-            class="fa-brands fa-whatsapp text-white text-[22px] mx-3 cursor-pointer"></i>
+            class="fa-brands fa-whatsapp font-medium text-white text-[22px] mx-3 cursor-pointer"></i>
         </a>
       </div>
       <div
@@ -75,53 +91,6 @@
       </div>
     </div>
     <!-- PopUp Contact Section -->
-    <!-- Banner Section -->
-    <section
-      class="mt-4 lg:mt-1 flex flex-col justify-center items-center w-full mx-auto gap-2">
-      <div class="flex flex-col justify-evenly items-center">
-        <h2 class="text-xl lg:text-4xl font-semibold text-slate-800 mt-">
-          Intra-Intake Programming Contest
-        </h2>
-        <p class="mt-1">Registration Started</p>
-        <button
-          type="button"
-          onclick="window.location.href ='./payment.html' "
-          class="mt-5 bg-green-600 text-sm text-white font-medium px-4 py-2 lg:px-5 lg:py-2 rounded-md hover:bg-white hover:text-green-600 hover:border-2 border-green-600 transform duration-300">
-          Register Now
-        </button>
-      </div>
-      <div class="flex flex-col justify-between items-center mt-5">
-        <p class="text-slate-900 font-extrabold">Deadline : 16-March-2024</p>
-        <p id="Last_date" class="text-slate-900 font-extrabold mt-5">
-          Time Remaining
-        </p>
-      </div>
-      <div
-        id="timer_div"
-        class="flex flex-row w-full justify-center items-center h-max px-6 gap-2 mx-auto mt-1">
-        <div
-          class="text-lg font-semibold text-white bg-[#012a4a] px-2 py-4 text-center rounded-md">
-          <span id="days">00</span> <br />
-          DAYS
-        </div>
-        <div
-          class="text-lg font-semibold text-white bg-[#013a63] px-2 py-4 text-center rounded-md">
-          <span id="hrs">12</span> <br />
-          HOURS
-        </div>
-        <div
-          class="text-lg font-semibold text-white bg-[#01497c] px-2 py-4 text-center rounded-md">
-          <span id="mins">59</span> <br />
-          MINS
-        </div>
-        <div
-          class="text-lg font-semibold text-white bg-[#014f86] px-2 py-4 text-center rounded-md">
-          <span id="secs">59</span> <br />
-          SECS
-        </div>
-      </div>
-    </section>
-
     <footer
       class="flex flex-col lg:flex-row justify-between items-center fixed bottom-0 w-full lg:px-36 bg-slate-800 py-8 gap-4 lg:gap-0">
       <p
@@ -148,7 +117,5 @@
         >
       </p>
     </footer>
-    <script src="./timer.js"></script>
-    <script src="./app.js"></script>
   </body>
 </html>
