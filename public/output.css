@@ -692,12 +692,12 @@ video {
   width: 1.5rem;
 }
 
-.w-6\/12 {
-  width: 50%;
-}
-
 .w-full {
   width: 100%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
 }
 
 .max-w-7xl {
