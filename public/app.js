@@ -38,17 +38,12 @@ payment_type.addEventListener("change", () => {
 });
 ///----------------Payment Method Change------------
 
-info_form.addEventListener("submit", (ev) => {
+/* info_form.addEventListener("submit", (ev) => {
   ev.preventDefault();
-  if (
-    validateForm("name") &&
-    validateForm("tr_id") &&
-    validateForm("reference")
-  ) {
-    form.submit();
+  if (validateForm("tr_id") || validateForm("reference")) {
+    info_form.submit();
   }
-});
-
+}); */
 function Cash_Clean() {
   cash_payment.classList.remove("hidden");
   cash_payment.classList.add("flex");
@@ -136,11 +131,12 @@ function Value_Assign() {
   reference = document.getElementById("ref_name").value;
 }
 
-function validateForm(id) {
+/* function validateForm(id) {
   var nameInput = document.getElementById(`${id}`).value.trim();
   if (nameInput === "") {
     alert("Don't Leave the fields blank !!");
     return false;
+  } else {
+    return true;
   }
-  return true;
-}
+} */
