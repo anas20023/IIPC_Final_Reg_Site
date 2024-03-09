@@ -38,26 +38,16 @@ payment_type.addEventListener("change", () => {
 });
 ///----------------Payment Method Change------------
 
-/*info_form.addEventListener("submit", (event) => {
-  //event.preventDefault();
-  Value_Assign();
-  Cash_Clean();
-  Nagad_Clean();
-  Bkash_Clean();
-  Clean_Default();
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-  alrt_sc.classList.remove("hidden");
-  alrt_sc.classList.add("flex");
-  info_form.classList.remove("flex");
-  info_form.classList.add("hidden");
-  document.getElementById("form_name").innerHTML = "";
-  setTimeout(() => {
-    alrt_sc.classList.add("hidden");
-    alrt_sc.classList.remove("flex");
-    //location.href = "./index.html";
-  }, 5000);
-}); */
+info_form.addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  if (
+    validateForm("name") &&
+    validateForm("tr_id") &&
+    validateForm("reference")
+  ) {
+    form.submit();
+  }
+});
 
 function Cash_Clean() {
   cash_payment.classList.remove("hidden");
@@ -144,4 +134,13 @@ function Value_Assign() {
   nagad_nmbr = document.getElementById("Nagad_number").value;
   Transaction_id = document.getElementById("tr_id").value;
   reference = document.getElementById("ref_name").value;
+}
+
+function validateForm(id) {
+  var nameInput = document.getElementById(`${id}`).value.trim();
+  if (nameInput === "") {
+    alert("Don't Leave the fields blank !!");
+    return false;
+  }
+  return true;
 }
