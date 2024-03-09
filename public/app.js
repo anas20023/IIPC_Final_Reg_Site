@@ -22,14 +22,14 @@ const nagad = document.querySelector("#Nagad_nmbr_div_show");
 
 ///----------------Payment Method Change------------
 payment_type.addEventListener("change", () => {
-  let method = payment_type.value;
-  if (method == "Cash") {
+  let methodd = payment_type.value;
+  if (methodd == "Cash") {
     Cash_Clean();
     Cash_More();
-  } else if (method == "Bkash") {
+  } else if (methodd == "Bkash") {
     Bkash_Clean();
     Bkash_More();
-  } else if (method == "Nagad") {
+  } else if (methodd == "Nagad") {
     Nagad_Clean();
     Nagad_More();
   } else {
@@ -131,12 +131,20 @@ function Value_Assign() {
   reference = document.getElementById("ref_name").value;
 }
 
-/* function validateForm(id) {
-  var nameInput = document.getElementById(`${id}`).value.trim();
-  if (nameInput === "") {
-    alert("Don't Leave the fields blank !!");
-    return false;
+function validate_Ref() {
+  let x = document.forms["info"]["reference"].value.trim();
+  let y = document.forms["info"]["Transaction_id"].value.trim();
+  let m = document.forms["info"]["method"].value;
+  /*  */
+  if (m == "Cash") {
+    if (x == "") {
+      alert("All Fields must be filled out");
+      return false;
+    }
   } else {
-    return true;
+    if (y == "") {
+      alert("All Fields must be filled out");
+      return false;
+    }
   }
-} */
+}
