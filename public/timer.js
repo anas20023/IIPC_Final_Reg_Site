@@ -5,7 +5,7 @@ let secs = document.querySelector("#secs");
 const timer_div = document.getElementById("timer_div");
 
 document.addEventListener("DOMContentLoaded", function () {
-  const targetDate = new Date("March 16, 2024 23:59:59").getTime();
+  const targetDate = new Date("March 17, 2024 17:59:59").getTime();
 
   const countdownInterval = setInterval(updateCountdown, 1000);
 

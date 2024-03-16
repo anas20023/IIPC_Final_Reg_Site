@@ -36,7 +36,7 @@ payment_type.addEventListener("change", () => {
     Clean_Default();
   }
 });
-///----------------Payment Method Change------------
+///----------------On Form Submit------------
 
 /* info_form.addEventListener("submit", (ev) => {
   ev.preventDefault();
@@ -130,7 +130,6 @@ function Value_Assign() {
   Transaction_id = document.getElementById("tr_id").value;
   reference = document.getElementById("ref_name").value;
 }
-
 function validate_Ref() {
   let x = document.forms["info"]["reference"].value.trim();
   let y = document.forms["info"]["Transaction_id"].value.trim();
