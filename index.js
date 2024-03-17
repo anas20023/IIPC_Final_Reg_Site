@@ -36,7 +36,7 @@ db.once("open", () => {
 
 ///--------
 
-/* app.post("/signup", (req, res) => {
+ app.post("/signup", (req, res) => {
   let Name = req.body.namee;
   let Email = req.body.email;
   let Phone = req.body.phone;
@@ -81,7 +81,6 @@ db.once("open", () => {
     }
   );
 });
-*/
 //----------
 app.post("/check", (req, res) => {
   let check_id = req.body.student_id;
