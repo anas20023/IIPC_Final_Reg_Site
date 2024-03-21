@@ -36,7 +36,7 @@ db.once("open", () => {
 
 ///--------
 
- app.post("/signup", (req, res) => {
+app.post("/signup", (req, res) => {
   let Name = req.body.namee;
   let Email = req.body.email;
   let Phone = req.body.phone;
@@ -93,10 +93,6 @@ app.post("/check", (req, res) => {
 
       if (result.Status === "Pending") {
         return res.redirect("/pending");
-      }
-
-      if (result.Status === "Accept") {
-        return res.redirect("/done");
       }
     }
   );
