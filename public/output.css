@@ -964,16 +964,8 @@ video {
   background-image: url(https://scontent.fdac147-1.fna.fbcdn.net/v/t39.30808-6/370046577_1869527396775133_7487469274174141566_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=aAWHyrmhqMkAX-1wZja&_nc_ht=scontent.fdac147-1.fna&oh=00_AfAPdRn0E5_HKRoT4Oc4P0zCMPNOND3BZoRwhK_2NvqqAg&oe=65FC8E96);
 }
 
-.bg-\[url\(https\:\/\/scontent\.fdac5-1\.fna\.fbcdn\.net\/v\/t39\.30808-6\/427700429_1178081666515025_1714095239164313036_n\.jpg\?stp\=dst-jpg_p960x960\&_nc_cat\=109\&ccb\=1-7\&_nc_sid\=5f2048\&_nc_ohc\=XJv-gaohUcQAX8PZVJZ\&_nc_ht\=scontent\.fdac5-1\.fna\&oh\=00_AfCGB4y6MAuX-uj2AN-JAnjfXZCKVCkdVpVo-XDIM-hQiQ\&oe\=65FB4534\)\] {
-  background-image: url(https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-6/427700429_1178081666515025_1714095239164313036_n.jpg?stp=dst-jpg_p960x960&_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XJv-gaohUcQAX8PZVJZ&_nc_ht=scontent.fdac5-1.fna&oh=00_AfCGB4y6MAuX-uj2AN-JAnjfXZCKVCkdVpVo-XDIM-hQiQ&oe=65FB4534);
-}
-
 .bg-\[url\(https\:\/\/scontent\.fdac7-1\.fna\.fbcdn\.net\/v\/t39\.30808-6\/424923307_2095395617488777_8307331087519379886_n\.jpg\?_nc_cat\=102\&ccb\=1-7\&_nc_sid\=5f2048\&_nc_ohc\=gCartB48sKYAX-z9P_N\&_nc_ht\=scontent\.fdac7-1\.fna\&oh\=00_AfDwFbYS7UN89BaQr9zz1yEEJW8B1jEwIPLR64bxY3onGw\&oe\=65FDB373\)\] {
   background-image: url(https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/424923307_2095395617488777_8307331087519379886_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=gCartB48sKYAX-z9P_N&_nc_ht=scontent.fdac7-1.fna&oh=00_AfDwFbYS7UN89BaQr9zz1yEEJW8B1jEwIPLR64bxY3onGw&oe=65FDB373);
-}
-
-.bg-\[url\(https\:\/\/scontent\.fdac7-1\.fna\.fbcdn\.net\/v\/t39\.30808-6\/427827475_3306654449627117_2660493962085696901_n\.jpg\?_nc_cat\=107\&ccb\=1-7\&_nc_sid\=5f2048\&_nc_ohc\=d3W6pEl8xPEAX-4DT7j\&_nc_ht\=scontent\.fdac7-1\.fna\&oh\=00_AfCtXYhEOawgwk8poxtXd3UKft4DGDErqDw6q_Mh642TRg\&oe\=65FC6BD3\)\] {
-  background-image: url(https://scontent.fdac7-1.fna.fbcdn.net/v/t39.30808-6/427827475_3306654449627117_2660493962085696901_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=d3W6pEl8xPEAX-4DT7j&_nc_ht=scontent.fdac7-1.fna&oh=00_AfCtXYhEOawgwk8poxtXd3UKft4DGDErqDw6q_Mh642TRg&oe=65FC6BD3);
 }
 
 .bg-\[url\(https\:\/\/tgihost\.pages\.dev\/image\?id\=BQACAgUAAx0EfBziBwACAT1l-S-1jjpn465TtxAN-zcU_TGPvAACwA8AAsBW0VfMU4Je0tcZgjQE\)\] {
@@ -1022,6 +1014,10 @@ video {
 
 .bg-\[url\(https\:\/\/tgihost\.pages\.dev\/image\?id\=BQACAgUAAx0EfBziBwACAUJl_GQkYlHc3JJvL9DHcIo1uk8gkwACVw4AAuVP6FfhyXlPTomMozQE\)\] {
   background-image: url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwACAUJl_GQkYlHc3JJvL9DHcIo1uk8gkwACVw4AAuVP6FfhyXlPTomMozQE);
+}
+
+.bg-\[url\(https\:\/\/tgihost\.pages\.dev\/image\?id\=BQACAgUAAx0EfBziBwACAURl_HU7xTU0AryZsG_3E5dI22PvjAACYw4AAuVP6FdETtHxH5U78zQE\)\] {
+  background-image: url(https://tgihost.pages.dev/image?id=BQACAgUAAx0EfBziBwACAURl_HU7xTU0AryZsG_3E5dI22PvjAACYw4AAuVP6FdETtHxH5U78zQE);
 }
 
 .bg-cover {
